@@ -33,5 +33,5 @@ app.get("/planetes", (req, res) => {
 // db.All : Affiche tout les enregistrements on ne peut afficher une ligne ou un champs demandé
 db.all('SELECT * FROM planetes', (err, data) => {
     if (err) throw err;
-    console.log(data);
+    res.json(data);
 });})
