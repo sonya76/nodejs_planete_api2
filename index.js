@@ -57,14 +57,7 @@ db.run('INSERT INTO planetes(nom,image) values (?,?)', ["Mars", "./planetes/mars
 app.get("/planetes", (req, res) => {
     res.send("Listes des planetes");
 // db.All : Affiche tout les enregistrements on ne peut afficher une ligne ou un champs demandé
-<<<<<<< HEAD
 db.all('SELECT * FROM planetes', (err, data) => {
     if (err) throw err;
     res.json(data);
 });})
-=======
-// db.all('SELECT * FROM planetes', (err, data) => {
-//     if (err) throw err;
-//     console.log(data);
-// });
->>>>>>> feature/route_planete
